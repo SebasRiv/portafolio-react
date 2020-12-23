@@ -1,9 +1,10 @@
 import React from 'react'
+import MainNav from '../MainNav/MainNav'
 
 const Header = () => {
     return (
         <header>
-            <p>Hola este es el header!</p>
+            <MainNav></MainNav>
         </header>
     )
 }

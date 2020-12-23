@@ -1,0 +1,169 @@
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+.nav__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+.nav__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.3rem;
+    font-weight: 600;
+}
+
+.nav__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.nav__contact {
+    display: none;
+    font-weight: 300;
+}
+
+.nav__subtitle {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.toggle {
+    display: none;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.toggle>span {
+    width: 24px;
+    height: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: black;
+}
+
+.nav__line1,
+.nav__line2,
+.nav__line3 {
+    display: inline-block;
+    transform-origin: center right;
+}
+
+.nav__line1,
+.nav__line3 {
+    transition: 0.3s;
+}
+
+.nav-social {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 827px) {
+
+    .nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav__logo {
+        font-size: 2rem;
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: 400;
+        justify-content: center;
+        height: 700px;
+    }
+
+
+    #btn-menu:checked ~ .toggle .nav__line1{
+        transform: rotate(-45deg) translateX(.5px);
+    }
+
+    #btn-menu:checked ~ .toggle .nav__line2{
+        opacity: 0;
+    }
+
+    #btn-menu:checked ~ .toggle .nav__line3 {
+        transform: rotate(45deg) translateX(.5px);
+    }
+
+    #btn-menu:checked ~ .nav__list {
+        display: flex;
+        position: absolute;
+        top: 4.8rem;
+        left: 0;
+        padding-left: 1rem;
+        background-color: white;
+        width: 100%;
+    }
+
+    .nav__list>.nav__item {
+        margin: 1rem;
+    }
+
+    .nav__contact {
+        display: flex;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .nav__subtitle {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .nav {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .nav {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .nav__item {
+        margin-left: 1rem;
+    }
+
+    .nav__logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
