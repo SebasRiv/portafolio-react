@@ -44,7 +44,7 @@
     display: none;
 }
 
-#btn-menu {
+.btn__menu {
     display: none;
 }
 
@@ -106,19 +106,19 @@
     }
 
 
-    #btn-menu:checked ~ .toggle .nav__line1{
+    .btn__menu:checked ~ .toggle .nav__line1{
         transform: rotate(-45deg) translateX(.5px);
     }
 
-    #btn-menu:checked ~ .toggle .nav__line2{
+    .btn__menu:checked ~ .toggle .nav__line2{
         opacity: 0;
     }
 
-    #btn-menu:checked ~ .toggle .nav__line3 {
+    .btn__menu:checked ~ .toggle .nav__line3 {
         transform: rotate(45deg) translateX(.5px);
     }
 
-    #btn-menu:checked ~ .nav__list {
+    .btn__menu:checked ~ .nav__list {
         display: flex;
         position: absolute;
         top: 4.8rem;
