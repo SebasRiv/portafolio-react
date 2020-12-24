@@ -1,4 +1,5 @@
 import React from 'react';
+import SubmitButton from '../SubmitButton/SubmitButton';
 
 import classes from './Banner.module.scss';
 
@@ -11,6 +12,7 @@ const Banner = (props) => {
             <div className={classes.banner__welcome}>
                 <p className={classes.banner__name}>Sebastian Rivera Giraldo</p>
                 <p className={classes.banner__message}>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <SubmitButton value="submit"></SubmitButton>
             </div>
         </div>
     )
