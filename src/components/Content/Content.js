@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Classes from './Content.module.scss';
 
-const Content = () => {
+const Content = (props) => {
 
     const[states, setStates] = useState([true, false, false, false, false]);
 
