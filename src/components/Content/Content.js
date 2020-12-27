@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CardsContainer from '../CardsContainer/CardsContainer';
 
 import Classes from './Content.module.scss';
 
@@ -57,6 +58,7 @@ const Content = (props) => {
                     </a>
                 </li>
             </ul>
+            <CardsContainer></CardsContainer>
             <a href="#" className={Classes.content__button}>More</a>
         </div>
     )
