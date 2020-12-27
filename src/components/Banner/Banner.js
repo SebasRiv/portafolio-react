@@ -12,7 +12,7 @@ const Banner = (props) => {
             <div className={classes.banner__welcome}>
                 <p className={classes.banner__name}>Sebastian Rivera Giraldo</p>
                 <p className={classes.banner__message}>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <SubmitButton value="submit"></SubmitButton>
+                <SubmitButton value="Let's work!  "></SubmitButton>
             </div>
         </div>
     )
