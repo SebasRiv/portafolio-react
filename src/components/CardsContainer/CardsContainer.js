@@ -10,7 +10,7 @@ const CardsContainer = () => {
                 <Card></Card>
             </div>
         </div>
-    )
+    );
 }
 
 export default CardsContainer

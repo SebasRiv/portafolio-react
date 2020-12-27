@@ -16,8 +16,6 @@ const Content = (props) => {
         }
         setStates(newStates);
     }
-
-    console.log(states);
     
     return (
         <div className={Classes.content__container}>
@@ -61,7 +59,7 @@ const Content = (props) => {
             <CardsContainer></CardsContainer>
             <a href="#" className={Classes.content__button}>More</a>
         </div>
-    )
+    );
 }
 
 export default Content
